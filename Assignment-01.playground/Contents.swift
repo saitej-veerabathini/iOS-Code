@@ -126,6 +126,7 @@ for i in 1...C-1{
     print("\n")
 }
 
+print("----------------------------------")
 //**************** END OF QUESTION 4 ****************
 
 
@@ -133,18 +134,35 @@ for i in 1...C-1{
 //**************** QUESTION 5 ****************
 // Using Strings
 //5.a) Declare a String and assign the value of your own, Write a Swift code to add "A" in front of the string and print it. If the string already begins with "A", then simply print it.
-var name = "Saitej"
-var i = name[name.startIndex]
-if(i == "A"){
-    name.insert("A", at: name.startIndex)
+
+var name = "Saitej Veerabathini"
+if (name.starts(with: "A")){
+    print(name)
 }
 else{
-    print("\(name)")
+    name.insert("A", at: name.startIndex)
+    print(name)
 }
+print("----------------------------------")
 
 //5.b) Declare a String str1 and and assign the value of your own. Write a swift code to add the last character at the front and back of the given string and print it.
 
+var str1 = "Saitej"
+var lastChar = str1[str1.index(str1.startIndex, offsetBy: str1.count-1)]
+str1.insert(lastChar, at: str1.startIndex)
+str1.insert(lastChar, at: str1.endIndex)
+print(str1)
+print("----------------------------------")
 //5.c) Declare a String Swift and print them in the reverse order.
+
+var string = "Swift"
+var nstr = ""
+for i in string.reversed(){
+    print(i, terminator: "")
+}
+print("----------------------------------")
+
+
 
 //5.d) Write a Swift code  to check if the first or last characters are 'a' of a given string, return the given string without those 'a' characters in the first and last, otherwise return the given string.
  //declare var myString1 = "ababa"
