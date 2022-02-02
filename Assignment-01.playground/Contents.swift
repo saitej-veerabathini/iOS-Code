@@ -167,6 +167,15 @@ print("----------------------------------")
 //5.d) Write a Swift code  to check if the first or last characters are 'a' of a given string, return the given string without those 'a' characters in the first and last, otherwise return the given string.
  //declare var myString1 = "ababa"
  //expected output bab
+
+var myString1 = "asababaa"
+if(myString1.hasPrefix("a")){
+            myString1.removeFirst()
+}
+if(myString1.hasSuffix("a")){
+            myString1.removeLast()
+}
+print(myString1)
 //**************** END OF QUESTION 5 ****************
 
  
